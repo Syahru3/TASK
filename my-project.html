@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLog</title>
+    <link rel="stylesheet" href="/Day 4/Task 4/my-project.css">
+    <link rel="stylesheet" href="/Day 4/Task 4/contact.css">
+</head>
+<body class="first-body">
+    <nav>
+        <div class="left">
+            <ul>
+                <li>
+                    <a href="/Day 4/Task 4/index.html">
+                        <img
+                        class="home-logo"
+                        src="/Day 4/Task 4/Assets/Icon/Logo-DumbWays.png" 
+                        alt="image here">
+                    </a>
+                    
+                    <!-- <a href="/Day 4/Task 4/Home-DB.html">Home</a> -->
+                </li>
+                <li>
+                    <a href="/Day 4/Task 4/my-project.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="middle">
+            <a class="title">PROFILE ID</a>
+        </div> -->
+
+        <div class="right">
+            <button class="button-1">
+                <a style="text-decoration: none"; href="/Day 4/Task 4/contact.html">
+                    <p class="button-p">
+                        Contact Me
+                    </p>
+                </a>
+            </button>
+        </div>
+    </nav>
+
+    <div class="form-color">
+    <form class="blog-form-wrapper"
+    onsubmit="addBlog(event)">
+           <div class="blog-form-title">
+            <h1>ADD MY PROJECT</h1>
+           </div>
+   
+           <div class="blog-input-Straight">
+               <label 
+               for="projectinput"
+               class="blog-form-label">Project Name
+                </label>
+
+               <input 
+               id="projectinput" 
+               name="projectinput"
+               type="text"
+               ---
+               placeholder="Name your project"
+               class="blog-form-input">
+           </div>
+           
+<!-- INPUT DATE -->
+
+           <div class="blog-input-flex">
+               <div>
+                   <label 
+                   for="startdate"
+                   class="blog-form-label">Start Date</label>
+                   <input 
+                   id="startdate"
+                   name="startdate"
+                   type="date"
+                   ---
+                   placeholder="Name your project"
+                   class="blog-form-input">
+               </div>
+   
+               <div>
+                   <label 
+                   for="enddate"
+                   class="blog-form-label">End Date</label>
+                   <input 
+                   id="enddate"
+                   name="enddate"
+                   type="date"
+                   ---
+                   placeholder="Name your project"
+                   class="blog-form-input">
+               </div>
+           </div>
+   
+<!-- INPUT DESCRIPTION -->
+
+           <div class="blog-textarea-straight">
+               <label 
+               for="description"
+               class="blog-form-label">Description</label>
+               <textarea 
+               id="description"
+               class="blog-form-textarea"></textarea>
+           </div>
+   
+<!-- INPUT TECHNOLOGIES -->
+
+           <div class="blog-input-Straight">
+               <label 
+               for="check"
+               class="blog-form-label">Technologies</label>
+               
+               <div>
+               <input 
+               type="checkbox" 
+               id="tedchnologies1" 
+               name="technologies1" 
+               value="Node JS">
+               <label for="technologies1">Node JS</label><br>
+   
+               <input 
+               type="checkbox" 
+               id="technologies2" 
+               name="technologies2" 
+               value="React JS">
+               <label for="technologies2">React JS</label><br>
+   
+               <input 
+               type="checkbox" 
+               id="technologies3" 
+               name="technologies3" 
+               value="Next JS">
+               <label for="technologies3">Next JS</label><br>
+   
+               <input 
+               type="checkbox" 
+               id="technologies4" 
+               name="technologies4" 
+               value="TypeScript">
+               <label for="technologies4">TypeScript</label><br>
+           </div>
+   
+<!--UPLOAD IMAGE -->
+
+            <!-- <div class="uploud-image">
+                <label>Upload Image</label>
+                <div class="group-uploud">
+                    <label for="inputImage" class="flex-uploud">
+                        <p>Choose</p>
+                        <img src="/Day 4/Task 4/Assets/Icon/Icon-attach.png" alt="file">
+                    </label>
+                    <input type="file" id="inputImage" hidden required>
+                </div>
+            </div>
+
+                <input 
+                type="file" id="input-blog-image"hidden>
+                </div>
+            </div> -->
+            
+<!-- BUTTON POST BLOG -->
+    
+            <div class ="button-group">
+                <button>
+                    <a>Post Blog</a>
+                </button>
+            </div>
+                
+              
+    </form>
+    </div>
+
+
+    <div id="test"></div>
+    <!-- <hr class="line"/> -->
+
+    <div>
+        <div>
+            <H1 class="project-color1">MY PROJECT</H1>
+        </div>
+
+        <div class="project-color-div">
+        <div class="blog-form-wrapper2">
+
+    <!-- CARD -->
+        <div class="card">
+            <img class="card-image"
+            src="/Day 4/Task 4/Assets/Images/pencil.jpg" 
+            alt="image"
+            >
+            
+            <a href="google.com"; class="card-link">
+                <h1 class="card-h1">Project Name</h1>
+            </a>
+            <p class="card-p">Description</p>
+        </div>
+
+  
+    <div id="contents" class="blog-list"> 
+        <!--dynamic content would be here-->
+<!--         
+        <div class="blog-list-item">
+            <div class="blog-image">
+                <img src="" alt="">
+            </div>
+            <div class="blog-content">
+                <div class="btn-group">
+                    <button class="btn-edit">Edit Post</button>
+                    <button class="btn-post">Delete Post</button>
+                </div>
+                <h1>
+                    <a href="blog-delail.html" target="_blank"
+                    >Pasar Coding Indonesia</a>
+                </h1>
+                <div class="detail-blog-content">
+                    12 Jul 2022 22:30 WIB | $(name)
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nam in consequat nisl. Donec non ante ac nibh pharetra 
+                    interdum a at arcu. Fusce pretium dignissim porttitor. 
+                    Aliquam non tincidunt odio. Vestibulum ante ipsum primis 
+                    in faucibus orci luctus et ultrices posuere cubilia curae; 
+                    Duis interdum ligula arcu, eu mollis nunc commodo vitae. 
+                    Nunc sollicitudin bibendum erat lobortis placerat. 
+                </p>
+            </div> -->
+
+            <!-- <div class="card">
+                <img class="card-image"
+                src="/Day 4/Task 4/Assets/Images/pencil.jpg" 
+                alt="image"
+                >
+                
+                <a href="google.com"; class="card-link">
+                    <h1 class="card-h1">Project Name</h1>
+                </a>
+                <p class="card-p">Description</p>
+            </div> -->
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+   <script src="/Day 4/Task 4/my-project.js"></script>
+</body>
+</html>

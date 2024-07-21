@@ -1,0 +1,79 @@
+/* NAVBAR */
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(248, 248, 248);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.middle{
+    background-color: rgba(128, 128, 128, 0);
+    display: flex;
+    align-items: center
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.right{
+    background-color: rgba(128, 128, 128, 0);
+    padding-right: 20px;
+    display: flex;
+    align-items: center
+}
+
+.right button{
+    padding: 10px;
+    color: rgb(53, 53, 53);
+    font-weight: 800;
+    background-color: rgb(221, 221, 221);
+    border: none;
+    border-radius: 15px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.left ul{
+    display: flex;
+    align-items: center;
+}
+
+.left ul li{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+.left ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.home-logo{
+    width: 55px;
+}
+
+/* HOME IMAGE */
+
+.background{
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
