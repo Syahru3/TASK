@@ -45,7 +45,7 @@ function renderBlog(){
         `     
         <div class="card">
             <img class="card-image"
-            src="/Day 4/Task 4/Assets/Images/pencil.jpg" 
+            src="/Assets/Images/pencil.jpg" 
             alt="image"
             >
            
